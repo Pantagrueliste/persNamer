@@ -57,7 +57,7 @@ Example:
     python persNamer.py 314802260
     ```
 Example output:
-    ```xml
+```xml
 Processing VIAF number: 314802260
 Starting to fetch VIAF record (RDF)...
 Fetching data from URL: https://viaf.org/viaf/314802260
@@ -77,7 +77,7 @@ Final Authority XML entry:
 </person>
 Final Annotation tag for TEI text (to be used separately):
 <persName ref="#pers-deteligny-c">Charles deTéligny</persName>
-  ```
+```
     
 ## Files
 
