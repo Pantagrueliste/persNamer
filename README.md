@@ -75,7 +75,6 @@ Example output:
       <death>1572-08-24</death>
       <idno type="VIAF">314802260</idno>
     </person>
-    
     Final Annotation tag for TEI text (to be used separately):
     <persName ref="#pers-deteligny-c">Charles deTéligny</persName>
     ```
