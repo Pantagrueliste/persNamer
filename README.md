@@ -58,25 +58,25 @@ Example:
     ```
 Example output:
     ```xml
-    Processing VIAF number: 314802260
-    Starting to fetch VIAF record (RDF)...
-    Fetching data from URL: https://viaf.org/viaf/314802260
-    Successfully fetched VIAF RDF data.
-    Parsing RDF data with rdflib, forcing format='xml'...
-    Name found: Charles deTéligny
-    Birth date found: 1535
-    Death date found: 1572-08-24
-    Creating TEI XML entry for the authority file...
-    TEI entry created successfully.
-    Final Authority XML entry:
-    <person xml:id="pers-deteligny-c">
-      <persName>Charles deTéligny</persName>
-      <birth>1535</birth>
-      <death>1572-08-24</death>
-      <idno type="VIAF">314802260</idno>
-    </person>
-    Final Annotation tag for TEI text (to be used separately):
-    <persName ref="#pers-deteligny-c">Charles deTéligny</persName>
+  Processing VIAF number: 314802260
+  Starting to fetch VIAF record (RDF)...
+  Fetching data from URL: https://viaf.org/viaf/314802260
+  Successfully fetched VIAF RDF data.
+  Parsing RDF data with rdflib, forcing format='xml'...
+  Name found: Charles deTéligny
+  Birth date found: 1535
+  Death date found: 1572-08-24
+  Creating TEI XML entry for the authority file...
+  TEI entry created successfully.
+  Final Authority XML entry:
+  <person xml:id="pers-deteligny-c">
+    <persName>Charles deTéligny</persName>
+    <birth>1535</birth>
+    <death>1572-08-24</death>
+    <idno type="VIAF">314802260</idno>
+  </person>
+  Final Annotation tag for TEI text (to be used separately):
+  <persName ref="#pers-deteligny-c">Charles deTéligny</persName>
     ```
     
 ## Files
