@@ -37,51 +37,51 @@ This setup allows you to maintain a centralized authority file and use a ready-m
 
 2.	Install Dependencies:
 It is recommended to use a virtual environment:
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate  # On Windows use: venv\Scripts\activate
-  pip install -r requirements.txt
-  ```
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
 If you don’t have a requirements.txt, you can install dependencies manually:
-  ```bash
-  pip install requests rdflib lxml
-  ```
+    ```bash
+    pip install requests rdflib lxml
+    ```
 
 ## Usage
 Run the script by providing a VIAF number as a command-line argument:
-  ```bash
-  python persNamer.py <VIAF number>
-  ```
+    ```bash
+    python persNamer.py <VIAF number>
+    ```
 Example: 
-  ```bash
-  python persNamer.py 314802260
-  ```
+    ```bash
+    python persNamer.py 314802260
+    ```
 Example output:
-  ```xml
-  Processing VIAF number: 314802260
-  Starting to fetch VIAF record (RDF)...
-  Fetching data from URL: https://viaf.org/viaf/314802260
-  Successfully fetched VIAF RDF data.
-  Parsing RDF data with rdflib, forcing format='xml'...
-  Name found: Charles deTéligny
-  Birth date found: 1535
-  Death date found: 1572-08-24
-  Creating TEI XML entry for the authority file...
-  TEI entry created successfully.
-  
-  
-  Final Authority XML entry:
-  <person xml:id="pers-deteligny-c">
-    <persName>Charles deTéligny</persName>
-    <birth>1535</birth>
-    <death>1572-08-24</death>
-    <idno type="VIAF">314802260</idno>
-  </person>
-  
-  Final Annotation tag for TEI text (to be used separately):
-  <persName ref="#pers-deteligny-c">Charles deTéligny</persName>
-  ```
-  
+    ```xml
+    Processing VIAF number: 314802260
+    Starting to fetch VIAF record (RDF)...
+    Fetching data from URL: https://viaf.org/viaf/314802260
+    Successfully fetched VIAF RDF data.
+    Parsing RDF data with rdflib, forcing format='xml'...
+    Name found: Charles deTéligny
+    Birth date found: 1535
+    Death date found: 1572-08-24
+    Creating TEI XML entry for the authority file...
+    TEI entry created successfully.
+    
+    
+    Final Authority XML entry:
+    <person xml:id="pers-deteligny-c">
+      <persName>Charles deTéligny</persName>
+      <birth>1535</birth>
+      <death>1572-08-24</death>
+      <idno type="VIAF">314802260</idno>
+    </person>
+    
+    Final Annotation tag for TEI text (to be used separately):
+    <persName ref="#pers-deteligny-c">Charles deTéligny</persName>
+    ```
+    
 ## Files
 
 - persNamer.py
