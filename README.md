@@ -1,4 +1,5 @@
 # persNamer
+[![DOI](https://zenodo.org/badge/933156851.svg)](https://doi.org/10.5281/zenodo.14875030)
 
 **persNamer** is a Python script that retrieves VIAF RDF data for a given VIAF identifier, extracts key personal information (such as the preferred name, birth date, and death date), and generates two TEI XML snippets:
 
