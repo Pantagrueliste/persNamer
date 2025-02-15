@@ -68,8 +68,6 @@ Example output:
     Death date found: 1572-08-24
     Creating TEI XML entry for the authority file...
     TEI entry created successfully.
-    
-    
     Final Authority XML entry:
     <person xml:id="pers-deteligny-c">
       <persName>Charles deTéligny</persName>
